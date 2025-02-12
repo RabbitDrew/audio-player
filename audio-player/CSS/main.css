@@ -1,0 +1,270 @@
+.page-container {
+    flex: 1;
+    min-width: 320px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*main player container*/
+.container-player {
+    max-width: 400px;
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    gap: 20px;
+}
+
+/*cover*/
+.player-cover__wrapper {
+    width: 100%; 
+    height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.cover-img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+/*controls container*/
+.track-display__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding:10px 10px 5px 10px;
+    border-radius: 9px;
+    background-color: rgba(255, 255, 255, 0.6);
+
+    position: relative;
+}
+
+/*title*/
+.dispaly-title {
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+/*progress bar container*/
+.display-bars__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+}
+ /*progress*/
+.progress-bar__wrapper {
+    width: 100%; 
+    height: 7px;
+    border-radius: 9px;
+    background-color: gray;
+    cursor: pointer;
+}
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #000;
+}
+
+/*volume vrapper*/
+.display-volume__wrapper {
+    width: 20px; 
+    height: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+
+    flex-shrink: 0;
+
+    border-radius: 100px;
+    
+
+
+    cursor: pointer;
+    transition: background-color, .2s ease ;
+}
+
+.display-volume__wrapper:hover {
+    background-color: #fff;
+}
+
+.volume_img{
+    width: 20px; 
+    height: 20px; 
+    object-fit: cover; 
+}
+
+/*volume leve style*/
+.volume-level__wrapper {
+    position: absolute;
+    z-index: 2;
+    bottom: 15px;
+    right: 17px;
+    width: 7px;
+    height: 60px;
+    background-color:  grey;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    align-items: start; 
+    border-radius: 9px;
+
+    cursor: pointer;
+}
+.volume-level {
+    width: 100%;
+    height: 100%;
+    background-color:  #000;
+}
+.input-volume {
+    display: none;
+}
+
+
+.hide__volume {
+    display: none;
+}
+
+/*time*/
+.display-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curr-time, .full-time, .slash {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*controls panel*/
+.dispaly-control__wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 5px;
+}
+
+.control_btn { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100px;
+
+    padding: 10px;
+
+    transition: background-color .2s ease;
+    cursor: pointer;
+}
+
+.control_img {
+    width: 30px; 
+    height: 30px; 
+    object-fit: cover; 
+}
+
+.play_img, .pause_img {
+    width: 40px;
+    height: 40px;
+}
+
+.control_btn:hover {
+     background-color:rgba(255, 255, 255, 0.65);
+}
+
+
+/*footer*/
+
+.footer{
+    min-width:320px;
+    width: 100vw;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: rgba(255, 255, 255, 0.6);
+
+}
+
+.footer-container {
+    max-width: 1440px;
+    min-width: 320px;
+    width: 100%;
+    padding: 0 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.git-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    text-decoration: none;
+}
+
+.git-title, .year {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+}
+
+
+.footer-rs-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.school-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.school_img {
+    width: 48px;
+    height: 48px;
+}
+
+
+/*media*/
+
+@media screen and (max-width: 400px) {
+    .container-player {
+        max-width: 320px;
+    }
+}
